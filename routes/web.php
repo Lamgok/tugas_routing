@@ -8,7 +8,6 @@ Route::get('/', function () {
 
 Route::get('/profile', [ProfilController::class, 'showProfile']);
 
-// Rute GET untuk menampilkan form (V)
 Route::get('/kontak', [KontakController::class, 'showForm'])->name('kontak.form');
 
 // Rute POST untuk memproses data (C)

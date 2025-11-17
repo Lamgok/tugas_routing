@@ -3,22 +3,22 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Kontak; // Import Model
+use App\Models\Kontak; // Pastikan menggunakan Model Kontak Anda
 
 class KontakSeeder extends Seeder
 {
     public function run(): void
     {
         Kontak::create([
-            'nama_kontak' => 'Budi Santoso',
-            'email' => 'budi@example.com',
-            'pesan' => 'Ini adalah pesan kontak pertama untuk demo.',
+            'nama_kontak' => 'Pengguna Awal',
+            'email' => 'awal@demo.com',
+            'pesan' => 'Data kontak dari proses seeding.',
         ]);
         
         Kontak::create([
-            'nama_kontak' => 'Ani Wijaya',
-            'email' => 'ani@example.com',
-            'pesan' => 'Pesan dari kontak kedua.',
+            'nama_kontak' => 'Pengguna Tes',
+            'email' => 'test@demo.com',
+            'pesan' => 'Pesan kedua dari seeder.',
         ]);
     }
 }
